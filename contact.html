@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Star</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS for styling the contact form */
+        .contact-container {
+            max-width: 600px;
+            margin-top: 2em;
+            padding-bottom: 4em;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-container h1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p><span class="tiny">Tiny</span>
+                <br> Star</p> 
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="campaign.html">Our Campaign</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button><a href="donate.html" class="a">Donate</a></button>
+        </div>
+    </div>
+
+    <main>
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form class="contact-form" action="#" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div class="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="campaign.html">Our Campaign</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button><a href="donate.html" class="a">Donate</a></button>
+    </div>
+</body>
+</html>

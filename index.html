@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny-star</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .hero {
+           display: flex;
+           justify-content: center;
+           width: 100%;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+        .left{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: -5%;
+        }
+        .left h1{
+            font-size: 50px;
+        }
+        .left p{
+            padding: 1em;
+            font-size: 18px;
+        }
+        .image {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
+        .image img{
+            margin-top: 10vh;
+            width: 24em;
+            border-radius: 100%;
+        }
+        .container{
+            display: flex;
+            padding: 2em;
+        }
+        .grid-container {
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            grid-template-rows: repeat(2, auto); /* Two rows */
+            gap: 20px; /* Gap between grid items */
+        }
+        .content{
+            width: 50%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+        }
+
+        .grid-item {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            text-align: center;
+        }
+
+        .grid-item h1{
+            font-size: 14px;
+            width: 50%;
+            display: flex;
+            margin-left: 4em;
+            padding: 3em;
+            justify-content: center;
+            height: 21vh;
+            border-radius: 100%;
+            font-weight: 600;
+            border: solid 1px #007bff;;
+        }
+        .thumbnail{
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+        .thumbnail h1{
+            display: flex;
+            justify-content: center;
+            padding: 1em;
+        }
+        .scrolling-div {
+            width: 600px;
+            height: 50vh;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .scrolling-content {
+            display: flex;
+            position: absolute;
+        }
+        .scrolling-item {
+            width: 600px;
+            height: 50vh;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .scrolling-item img {
+            width: 600px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="navbar">
+        <div class="logo">
+            <p><span class="tiny">Tiny <br></span> Star</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="campaign.html">Our Campaign</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button><a href="donate.html" class="a">Donate</a></button>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="left">
+            <h1>Together We Can</h1>
+            <h1>Save Lives</h1>
+            <p>This embodies our collective mission and shared commitment. United in purpose, we strive to make a positive impact, one life at a time. By working together and embracing our responsibility, we create a safer, healthier, and more compassionate world for all.</p>
+            <button><a style=" color: white; text-decoration: none; border: none; font-size: 18px; padding: 0.4em 1em;" href="#">Donate</a></button>
+        </div>
+        <div class="image">
+            <img src="https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?s=612x612&w=0&k=20&c=qZ63xODwrnc81wKK0dwc3tOEf2lghkQQKmotbF11q7Q=" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>We`ve helped </h1>
+            <h1>more than 40,000</h1>
+            <h1>children</h1>
+            <p>With your support, we've positively impacted over 40,000 children's lives and counting. Together, we're fostering brighter futures.</p>
+           <div style="display: flex; justify-content: center;"> <button><a style="color: white; text-decoration: none; border: none; font-size: 18px; padding: 0.4em 1em;" href="donate.html">Donate</a></button>
+           </div>
+        </div>
+        <div class="grid-container">
+        <div class="grid-item">
+            <h1>Education</h1>
+            <p>Empowering through education, we transform lives. Together, we pave the way for brighter futures, impacting generations to come.</p>
+        </div>
+        <div class="grid-item">
+            <h1>Clean Water</h1>
+            <p>By ensuring clean water access, we safeguard children's health. Together, we save lives, one drop at a time, for a brighter future.</p>
+        </div>
+        <div class="grid-item">
+            <h1>Supplies</h1>
+            <p>Ensuring children's access to vital supplies. Together, we save lives by providing essentials like food, clothing, and medical aid</p>
+        </div>
+        <div class="grid-item">
+            <h1>Shelter</h1>
+            <p>Providing shelter means offering safety and dignity to children in need. Together, we save lives, building a brighter tomorrow.</p>
+        </div>
+    </div>
+    </div>
+    <!---thumbnail---->
+    
+    <div class="thumbnail">
+        <div>
+            <div><h1>Children We`ve helped</h1></div>
+            <div class="scrolling-div">
+                <div class="scrolling-content">
+                    <div class="scrolling-item"><img src="https://i.stci.uk/sites/www.savethechildren.net/files/styles/landing_card/public/CH1732467_Joel,%2010,%20feeding%20his%20four-year-old%20brother,%20Junior,%20biscuits%20at%20a%20Child-Friendly%20Space%20in%20Eastern%20DRC%20(4).jpg" alt=""></div>
+                    <div class="scrolling-item"><img src="https://i.stci.uk/sites/www.savethechildren.net/files/styles/landing_card/public/wwahead.jpg" alt=""></div>
+                    <div class="scrolling-item"><img src="https://www.savethechildren.org/content/dam/global/images/countries/bolivia/boliva-students-m189229-rec.jpg/_jcr_content/renditions/original.img.jpg" alt=""></div>
+                    <div class="scrolling-item"><img src="https://www.savethechildren.org/content/dam/usa/images/donors/zimbabwe-food-crisis-ch1420542-sq.jpg/_jcr_content/renditions/original.img.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; margin-left: 2em; margin-top: -40vh;  animation: blink 1s infinite alternate; justify-content: center;"> <button><a style="color: white;  text-decoration: none; border: none; font-size: 18px; padding: 0.4em 1em;" href="campaign.html"><p style="color: white;">View our</p> <p style="color: white;">Campaign</p></a></button>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="campaign.html">Our Campaign</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button><a href="donate.html" class="a">Donate</a></button>
+    </div>
+   <script src="tiny.js"></script>
+</body>
+</html>"
